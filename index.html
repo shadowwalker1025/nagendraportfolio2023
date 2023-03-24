@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./jquery.convform.css">
+    <script type="text/javascript" src="jquery.convform.js"></script>
+
+</head>
+
+<body>
+    <!--- Chat Box Starts Here-->
+     <div class="chat_icon">
+        <i class='bx bxs-message-rounded-minus'></i>
+    </div>
+    <div class="chat_box">
+        <div class="conv-form-wrapper">
+        <form action="" method="GET" class="hidden">
+            <select name="category" data-conv-question="Hi, This is Naga's personal chat box and How can i help you? ">
+                <option value="frontenddevelopment">Frontend Development</option>
+                <option value="uiuxdesign">UI/UX Design</option>
+            </select>
+            <div data-conv-fork="category">
+                <div data-conv-case="frontenddevelopment">
+                     <input type="text" name="domain_name" data-conv-question="Please tell me your domain name? " >
+                </div>
+                <div data-conv-case="uiuxdesign">
+                    <input type="text" name="company_name" data-conv-question="Please tell me your company name? " >
+               </div>
+            </div>
+            <input type="text" name="name" data-conv-question="Please tell me your name? " >
+            <input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
+            <select data-conv-question="Confirm">
+                <option value="confirm">Confirm</option>
+            </select>
+        </form>
+        </div>
+    </div>
+
+    <!--- Chat Box Ends Here-->
+
+    <!--- Header  Starts Here-->
+    <header>
+        <a href="#home" class="logo"><img src="img/nagatere-logo-removebg-preview.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://resume.io/r/L0DfFX4sx" class="top-btn">Download CV</a>
+    </header>
+
+    <!--- Home Section Starts Here-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hello, I'm</h3>
+            <h1>Naga Tere</h1>
+            <h5>A Frontend Developer <span>From Hyderabad</span></h5>
+            <p>I'm a frontend developer based in Hyderabad, and I'm very passionate and dedicated to my work.</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/tere-nagendra-babu-1b2b5939/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/shadowwalker1025"><i class='bx bxl-github' ></i></a>
+                <a href="https://twitter.com/terenagendra"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.instagram.com/shadowwalker1025/?hl=en"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.facebook.com/nagendra.tere"><i class='bx bxl-facebook' ></i></a>
+            </div>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+        <div class="home-img">
+            <img src="img/naga-removebg-photo.png" alt="">
+        </div>
+    </section>
+    <!--- Home Section Ends Here-->
+    <!--- Service Section Starts Here-->
+
+    <!-- <section class="sub-service">
+        <div class="items">
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="img/target.svg" alt="">
+                </div>
+                <h3>Pixel Perfect</h3>
+                <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+            </div>
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="img/brush.svg" alt="">
+                </div>
+                <h3>High Quality</h3>
+                <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+            </div>
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="img/energy.svg" alt="">
+                </div>
+                <h3>Awesome Idea</h3>
+                <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+            </div>
+
+        </div>
+    </section> -->
+
+    <!--- Service Section Ends Here-->
+
+    <!---  About Section Starts Here-->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h3>I'm a Developer</h3>
+            <h2>I can design and develop anything you want.</h2>
+            <p>Hello there! I'm a Frontend Developer and I'm very passionate and dedicated to my work.
+                with 1 year of experience as a professional developer, I have acquired the skills and 
+                knowledge necessary to make your project a success. I enjoy every step of the development
+                process, from discussion to collaboration.
+            </p>
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+    <!---  About Section Ends Here-->
+    <!---  Portfolio Section Start Here-->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h3>Portfolio</h3>
+            <h2>My Work</h2>
+            <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="col">
+                <img src="img/booklistapp.png">
+                <div class="layer">
+                    <h3><a href="https://shadowwalker1025.github.io/BOOKLISTAPP/booklist.html">BookList App</a></h3>
+                    <!-- <h5>Popup</h5> -->
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/bookmyshow.png">
+                <div class="layer">
+                    <h3><a href="https://shadowwalker1025.github.io/Book_My_Seat_Final/Input.html">BookMyShow Clone</a></h3>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/News.jpg">
+                <div class="layer">
+                    <h3><a href="https://63f9c43f35086a6b9f1642b6--lucky-dasik-7f91c6.netlify.app/">Hacker News App</a></h3>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/Lyric-App.jpg">
+                <div class="layer">
+                    <h3><a href="https://shadowwalker1025.github.io/project2/">Lyrics App</a></h3>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/to-do-list.jpeg">
+                <div class="layer">
+                    <h3><a href="https://shadowwalker1025.github.io/To-Do-List/todolist.html">To-Do-List App</a></h3>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/React-Native-App.jpg">
+                <div class="layer">
+                    <h3><a href="https://github.com/shadowwalker1025/Demo-App---React-Native.git">React-Native App</a></h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!---  Portfolio Section Ends Here-->
+
+    <!---  Service Section Starts Here-->
+
+    <section class="service" id="service">
+        <div class="heading">
+            <h3>Tools and <b>Technologies</b></h3>
+            <!-- <h2>What I Do For Clients</h2>
+            <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p> -->
+        </div>
+
+        <div class="service-content">
+            <div class="tools-row">
+                <ul class="tools-navlist">
+                    <li class="list">
+                        <img src="img/html.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/css-3.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/js.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/react.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/bootstrap.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/MU logo.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/angularjs.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/typescript.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/sass.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/github.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/visual-studio.png">
+                    </li>
+                    <li class="list">
+                        <img src="img/microsoft.png">
+                    </li>
+                </ul>
+                <!-- <div class="s s-one">
+                    <img src="img/anchor.svg">
+                    <h3>Web Design</h3>
+                    <h5>Starts From <span>$10/hour</span></h5>
+                    <p>Web design refers to the design of websites that are displayed on the internet. 
+                        It usually refers to the user experience aspects of website development.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="s s-two">
+                    <img src="img/physics.svg">
+                    <h3>Web Design</h3>
+                    <h5>Starts From <span>$10/hour</span></h5>
+                    <p>Web design refers to the design of websites that are displayed on the internet. 
+                        It usually refers to the user experience aspects of website development.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="s s-three">
+                    <img src="img/web.svg">
+                    <h3>Web Design</h3>
+                    <h5>Starts From <span>$10/hour</span></h5>
+                    <p>Web design refers to the design of websites that are displayed on the internet. 
+                        It usually refers to the user experience aspects of website development.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="s s-four">
+                    <img src="img/contact.svg">
+                    <h3>Web Design</h3>
+                    <h5>Starts From <span>$10/hour</span></h5>
+                    <p>Web design refers to the design of websites that are displayed on the internet. 
+                        It usually refers to the user experience aspects of website development.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!---  Service Section Ends Here-->
+
+    <!---  Contact Section Starts Here-->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="center">
+                <h3>Let's talk about evrything.</h3>
+                <p>Don't like forms? Send me an email. or Call me.</p>
+                <p>Phone No:- +91-9085894892</p>
+            </div>
+
+            <div class="action">
+                <form>
+                    <input type="email" name="email" placeholder="Enter Your E-mail" required>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!---  Contact Section Ends Here-->
+
+    <!---  Ends Here-->
+
+    <div class="ends">
+        <p>website made by Naga Tere @ 2023</p>
+    </div>
+
+
+
+    <!-- Link to JS -->
+    
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./chat-box.js"></script>
+
+</body>
+</html>
