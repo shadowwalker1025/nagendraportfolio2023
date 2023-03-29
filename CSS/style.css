@@ -533,7 +533,7 @@ transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1
     right: 120px;
     bottom: 0;
     font-size: 80px;
-    color: rgb(11, 11, 11);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     z-index: 1000;
 }
