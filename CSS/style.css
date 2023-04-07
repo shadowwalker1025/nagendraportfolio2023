@@ -450,6 +450,36 @@ header.sticky {
   border-radius: 12px;
 }
 
+.tooltipText{
+  background-color: #fff;
+  position: absolute;
+  bottom: 130%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.tooltipText::after {
+  content: '';
+  background-color: #ffffff;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(192, 56, 56) transparent transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  margin-left: 5%;
+}
+
+.list:hover .tooltipText{
+  opacity: 0.3;
+  transform: translateY(-2px);
+}
+
+.tooltipText {color: #4f5050;}
+
 .contact {
   background: #8067f0eb;
   width: 64%;
